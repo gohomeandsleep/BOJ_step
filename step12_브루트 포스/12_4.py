@@ -43,4 +43,4 @@ for i in range(n - 7):
         ans = min(ans, res_a, res_b)
 print(ans)
 
-#not solved : 예제입력1 입력시 1이 아닌 8이 입력됨
+#not solved : 예제입력1 입력시 1이 아닌 8이 출력됨
