@@ -36,9 +36,11 @@ ans = 32
 for i in range(n - 7):
     for j in range(m - 7):
         sub_arr = [arr[x][j:j+8] for x in range(i, i+8)]
-
+        
         res_a = count_different_elements(sub_arr, arr_BW)
         res_b = count_different_elements(sub_arr, arr_WB)
 
         ans = min(ans, res_a, res_b)
 print(ans)
+
+#not solved : 예제입력1 입력시 1이 아닌 8이 입력됨
