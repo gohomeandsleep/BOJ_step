@@ -1,6 +1,15 @@
-T = int(input())
+a, b = input().split()
+a = list(a)
+b = list(b)
 
-for _ in range(T):
-    city, plane = map(int, input().split())
-    lst = [input().split() for _ in range(plane)]
-    print(city - 1)
+min = 50
+for i in range(len(b) - len(a) + 1):
+    tmp = 0
+    for j in range(len(a)):
+        #print(a[j], b[i+j])
+        if a[j] != b[i+j]:
+            tmp += 1
+    if tmp < min:
+        min = tmp
+
+print(min)
