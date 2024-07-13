@@ -3,7 +3,6 @@ for _ in range(T):
     n = int(input())
     lst1 = list(map(int, input().split()))
     lst = [[i+1, lst1[i]] for i in range(n)]
-    #print(lst)
 
     cnt = 0
     visited = set()
@@ -21,6 +20,5 @@ for _ in range(T):
                     visited.add(current)
                     next = lst[current-1][1]
                     current = next
-                    print(next)
                 cnt += 1
     print(cnt)
